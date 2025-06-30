@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  script:
+    build: .
+    env_file:
+      - src/.env
+    volumes:
+      - ./src/google-key.json:/app/src/google-key.json:ro
