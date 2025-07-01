@@ -36,6 +36,7 @@ Open an SSH console to your app:
 
 ```sh
 fly ssh console --app kickoff-sync
+```
 
 <!-- LICENSE -->
 ### License
