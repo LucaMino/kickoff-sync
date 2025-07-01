@@ -21,17 +21,23 @@ Whether you’re tracking your club’s domestic league or international competi
 1. Clone the repository:
    ```sh
    git clone https://github.com/LucaMino/kickoff-sync
-   cd kickoff-sync
 2. Create `.env` from [.env.example](src/.env.example)
 3. Build container
    ```sh
    docker-compose up -d --build
    ```
 
+---
+
+## 🛠️ fly.io Utils
+
+Open an SSH console to your app:
+
+```sh
+fly ssh console --app kickoff-sync
+```
+
 <!-- LICENSE -->
 ### License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-
-fly ssh console --app kickoff-sync
