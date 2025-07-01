@@ -21,7 +21,6 @@ Whether you’re tracking your club’s domestic league or international competi
 1. Clone the repository:
    ```sh
    git clone https://github.com/LucaMino/kickoff-sync
-   cd kickoff-sync
 2. Create `.env` from [.env.example](src/.env.example)
 3. Build container
    ```sh
@@ -30,7 +29,7 @@ Whether you’re tracking your club’s domestic league or international competi
 
 ---
 
-## 🛠️ fly.io Utilities
+## 🛠️ fly.io Utils
 
 Open an SSH console to your app:
 
