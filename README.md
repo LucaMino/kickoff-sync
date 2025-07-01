@@ -29,11 +29,12 @@ Whether you’re tracking your club’s domestic league or international competi
 
 ---
 
-## 🛠️ fly.io Utils
+## 🛠️ fly.io - Utils
 
 Open an SSH console to your app:
 
 ```sh
+fly deploy
 fly ssh console --app kickoff-sync
 ```
 
