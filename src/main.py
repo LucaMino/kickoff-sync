@@ -11,8 +11,6 @@ def main():
 
     print(f'Found {len(events)} events at {datetime.now(pytz.timezone("Europe/Rome")).isoformat()}')
 
-    events = events[:5]
-
     for event in events:
         # convert startTimestamp to datetime object
         dt = datetime.fromtimestamp(event['startTimestamp'], pytz.timezone('Europe/Rome'))
