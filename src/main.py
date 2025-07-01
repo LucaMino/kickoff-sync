@@ -9,7 +9,7 @@ def main():
     sofascore = SofaScoreAPIClient()
     events = sofascore.get_events()
 
-    print(f'Found {len(events)} events')
+    print(f'Found {len(events)} events at {datetime.now(pytz.timezone("Europe/Rome")).isoformat()}')
 
     events = events[:5]
 
