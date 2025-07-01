@@ -1,4 +1,5 @@
 import os
+import json
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -12,7 +13,14 @@ class GoogleCalendarClient:
         """
         if scopes is None:
             scopes = ['https://www.googleapis.com/auth/calendar']
-        self.credentials = service_account.Credentials.from_service_account_file(credentials_file, scopes=scopes)
+
+        if os.getenv('APP_ENV', 'DEV') == 'DEV':
+            # load credentials from file
+            self.credentials = service_account.Credentials.from_service_account_file(credentials_file, scopes=scopes)
+        else:
+            # load credentials from JSON env variable
+            self.credentials = service_account.Credentials.from_service_account_info(json.loads(os.getenv('GOOGLE_KEY_JSON')), scopes=scopes)
+
         self.service = build('calendar', 'v3', credentials=self.credentials)
 
     def create_event(self, event_data):

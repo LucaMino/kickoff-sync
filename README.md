@@ -1,6 +1,6 @@
 # kickoff-sync
 
-**kickoff-sync** is a lightweight tool that automatically syncs your favorite football team’s upcoming matches to your Google Calendar.  
+**kickoff-sync** is a lightweight tool that automatically syncs your favorite football team’s upcoming matches to your Google Calendar.
 It fetches match data from a reliable source and creates calendar events with key details such as date, opponent, venue, and optional reminders.
 
 Whether you’re tracking your club’s domestic league or international competitions, kickoff-sync helps you stay organized and never miss a match.
@@ -32,3 +32,6 @@ Whether you’re tracking your club’s domestic league or international competi
 ### License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+
+fly ssh console --app kickoff-sync
