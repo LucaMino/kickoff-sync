@@ -28,10 +28,16 @@ Whether you’re tracking your club’s domestic league or international competi
    docker-compose up -d --build
    ```
 
+---
+
+## 🛠️ fly.io Utilities
+
+Open an SSH console to your app:
+
+```sh
+fly ssh console --app kickoff-sync
+
 <!-- LICENSE -->
 ### License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-
-fly ssh console --app kickoff-sync
