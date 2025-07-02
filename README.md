@@ -29,13 +29,13 @@ Whether you’re tracking your club’s domestic league or international competi
 
 ---
 
-## 🛠️ fly.io - Utils
-
-Open an SSH console to your app:
+## 🛠️ Utils
 
 ```sh
 fly deploy
-fly ssh console --app kickoff-sync
+fly ssh console --app kickoff-sync  // open an SSH console to your app
+docker-compose run script pip list
+docker-compose run script pip freeze > requirements.txt
 ```
 
 <!-- LICENSE -->
